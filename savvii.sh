@@ -2,6 +2,7 @@
 
 export here="$(dirname "$(readlink -f "$0")")"
 export this="$(basename "$(readlink -f "$0")")"
+export self="${here}/${this}"
 export bin="${here}/bin"
 export lib="${here}/lib"
 export doc="${here}/doc"
