@@ -5,6 +5,6 @@
 prefix() {
     while read line 
     do
-        info "%s: %s\n" "$1" "$line"
+        info $(printf "%s: %s\n" "$1" "$line")
     done
 }
