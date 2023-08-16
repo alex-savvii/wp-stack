@@ -20,4 +20,4 @@ shift
 [ -x "${bin}/${cmd}.pl" ] && exec "${bin}/${cmd}.pl" "$@"
 [ -x "${bin}/${cmd}.sh" ] && exec "${bin}/${cmd}.sh" "$@"
 
-die "$this $cmd not found"
+die "\"${this%.*} $cmd\" not found"
